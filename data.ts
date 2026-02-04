@@ -20,7 +20,7 @@ export const testPosts: Post[] = [
   {
     name: "GraphQL",
     category: "Lesson",
-    date: new Date("2026-02-02"),
+    date: new Date("2026-02-05"),
     photo: "graphql.png",
     text:"Tijdens het bestuderen van de code van het bedrijf kwam ik GraphQL tegen.Omdat ik eerder met REST-API’s had gewerkt op school, voelde ik meteen het verschil. Door GraphQL te gebruiken en de queries en schema’s te bekijken, begreep ik hoe het efficiënt data ophaalt en structureert. Je kunt precies aangeven welke velden je nodig hebt, wat zorgt voor minder overbodige data en snellere reacties. Deze ervaring gaf mij een beter inzicht in moderne API’s en hoe kun jij GraphQL gebruiken.",
     id:3

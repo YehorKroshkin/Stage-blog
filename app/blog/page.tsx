@@ -1,17 +1,18 @@
-"use client";
-
-import Footer from "@/components/Footer";
+// pages/blog/page.tsx (или app/blog/page.tsx)
 import Header from "@/components/Header";
-import PostList from "@/components/PostListComponent";
+import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTopComponent";
-import Search from "@/components/SearchComponent";
+import dynamic from "next/dynamic";
 
-export default function Blog() {
-    return (
-        <div className="p-8 bg-[#f8f5f0] min-h-screen ">
-                <Header/>
-                <Search/>
-              <ScrollToTop/>
-            </div>
-    );
+// Импортируем клиентский компонент динамически, без SSR
+const Search = dynamic(() => import("@/components/SearchComponent"), { ssr: false });
+
+export default function BlogPage() {
+  return (
+    <div className="p-8 bg-[#f8f5f0] min-h-screen">
+      <Header />
+      <Search />      {/* теперь рендерится только на клиенте */}
+      <ScrollToTop />
+    </div>
+  );
 }

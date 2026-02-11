@@ -26,16 +26,18 @@ export const testPosts: Post[] = [
     id:3
   },
   {
-    name: "Reflectie over stage",
+    name: "First ticket: Profile Page",
     category: "Code",
-    date: new Date("2026-01-28"),
+    date: new Date("2026-02-11"),
+    text: "Mijn eerste taak was de ontwikkeling van de profielpagina (Profile Page). In het kader van deze ticket heb ik geleerd om geverifieerde gegevens op te halen met behulp van GraphQL. Daarnaast heb ik een pagina geïmplementeerd voor het bekijken en weergeven van gebruikersgegevens.",
     id:4
   },
   {
-    name: "Fail: mislukte deployment",
-    category: "Fail",
-    date: new Date("2026-02-03"),
-    photo: "/images/fail.jpg",
+    name: "GraphQl architecture",
+    category: "Problem Solution",
+    date: new Date("2026-02-12"),
+    text: "De volledige workflow van GraphQL — van schema en resolvers tot query en het ophalen van data. Voor de profielpagina moest ik de volledige datastructuur analyseren, begrijpen hoe types en resolvers samenwerken en een efficiënte manier vinden om data correct op te halen tussen Back End en Front End.",
+    photo: "graphQL-arch.png",
     id:5
   },
 ];

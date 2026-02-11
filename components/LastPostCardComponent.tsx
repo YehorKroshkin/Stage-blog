@@ -37,7 +37,7 @@ export default function LastPostCard({ post }: LastPostCardProps) {
                 </h2>
 
                 {/* Text */}
-                <p className="text-stone-600 leading-relaxed line-clamp-2">
+                <p className="text-stone-600 text-xl mb-2 mt-3 leading-relaxed line-clamp-2">
                     {post.text}
                 </p>
 

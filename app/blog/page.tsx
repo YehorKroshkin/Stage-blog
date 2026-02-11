@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import PostList from "@/components/PostListComponent";
 import ScrollToTop from "@/components/ScrollToTopComponent";
 import Search from "@/components/SearchComponent";
 import { Suspense } from "react";

@@ -23,7 +23,9 @@ export default function Search() {
     ...Array.from(new Set(testPosts.map(post => post.category))),
   ];
 
-  const filteredPosts = testPosts.filter(post => {
+  // Фильтруем и сразу сортируем
+const filteredPosts = testPosts
+  .filter(post => {
     const matchesSearch = post.name
       .toLowerCase()
       .includes(search.toLowerCase());
@@ -32,7 +34,13 @@ export default function Search() {
       category === "all" || post.category === category;
 
     return matchesSearch && matchesCategory;
+  })
+  .sort((a, b) => {
+    const dateA = a.date instanceof Date ? a.date.getTime() : new Date(a.date).getTime();
+    const dateB = b.date instanceof Date ? b.date.getTime() : new Date(b.date).getTime();
+    return dateB - dateA; // новые сверху
   });
+
 
   return (
     <>

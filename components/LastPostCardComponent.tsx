@@ -14,7 +14,7 @@ export default function LastPostCard({ post }: LastPostCardProps) {
 
             {/* Image */}
             {post.photo && (
-                <div className="w-full h-[280px] relative">
+                <div className="w-full h-[220px] relative">
                     <LightboxImage
                         src={post.photo}
                         alt={post.name}
@@ -37,7 +37,7 @@ export default function LastPostCard({ post }: LastPostCardProps) {
                 </h2>
 
                 {/* Text */}
-                <p className="text-stone-600 leading-relaxed line-clamp-3">
+                <p className="text-stone-600 leading-relaxed line-clamp-2">
                     {post.text}
                 </p>
 

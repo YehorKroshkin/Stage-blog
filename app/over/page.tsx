@@ -56,7 +56,7 @@ export default function OverPage() {
           <ul className="list-disc list-inside ml-2">
             <li>HTML, CSS, JavaScript, TypeScript</li>
             <li>React / React Native, Next.js</li>
-            <li>MongoDB, SQL, Postman</li>
+            <li>MongoDB, SQL, Postman, GraphQL</li>
             <li>Basiskennis Cloud</li>
           </ul>
         </div>

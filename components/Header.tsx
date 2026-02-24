@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 export default function Header() {
   const pathname = usePathname();
 
-  const linkClass = (path) =>
+  const linkClass = (path: string) =>
     `px-5 py-2 rounded-full transition ${
       pathname === path
         ? "bg-white text-black"
@@ -31,4 +31,4 @@ export default function Header() {
       </nav>
     </header>
   );
-}
+} 

@@ -4,8 +4,12 @@ import Header from "../components/Header";
 import Footer from "@/components/Footer";
 import LastPostComponent from "@/components/LastPostComponent";
 import ScrollToTop from "@/components/ScrollToTopComponent";
+import { usePathname } from "next/navigation";
+import useTimeOnPage from "@/hooks/useTimeOnPage";
 
 export default function Landing() {
+  const pathname = usePathname();
+  useTimeOnPage(pathname);
   return (
     <div className="p-8 bg-[#f8f5f0] min-h-screen text-black">
       <Header/>

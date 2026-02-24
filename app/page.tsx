@@ -1,16 +1,13 @@
-"use client"
+
 // app/page.jsx
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "@/components/Footer";
 import LastPostComponent from "@/components/LastPostComponent";
 import ScrollToTop from "@/components/ScrollToTopComponent";
-import { usePathname } from "next/navigation";
-import useTimeOnPage from "@/hooks/useTimeOnPage";
+import CookieConsentPopup from "@/components/CoockiePopUp";
 
 export default function Landing() {
-  const pathname = usePathname();
-  useTimeOnPage(pathname);
   return (
     <div className="p-8 bg-[#f8f5f0] min-h-screen text-black">
       <Header/>
@@ -19,7 +16,7 @@ export default function Landing() {
 
       <section className="max-w-6xl mx-auto px-6 py-20 flex flex-col-reverse md:flex-row items-center gap-16">
 
-  {/* Текст */}
+  {/* Теxt */}
   <div className="flex-1 text-center md:text-left">
     <h3 className="text-4xl md:text-5xl font-bold text-stone-800 mb-6">
       Waarom deze blog?
@@ -56,7 +53,7 @@ export default function Landing() {
 <h1 className="text-4xl font-bold mb-10 mt-10 text-center">Laatste post</h1>
 
 <section className="bg-stone-100 rounded-xl shadow-md p-8 flex flex-col md:flex-row items-center gap-6 mt-10">
-  {/* Текстовая часть */}
+  {/* Text */}
   <div className="flex-1">
     <h3 className="text-2xl font-semibold mb-3 text-stone-900 text-center mb-4">
       <LastPostComponent/>
@@ -64,7 +61,7 @@ export default function Landing() {
   
   </div>
 </section>
-
+<CookieConsentPopup pagePath="/" />
 
     </div>
   );

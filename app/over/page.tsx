@@ -3,12 +3,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer"
 import Link from "next/link";
 import ScrollToTop from "@/components/ScrollToTopComponent";
-import { usePathname } from "next/navigation";
-import useTimeOnPage, { sendGAEvent } from "@/hooks/useTimeOnPage";
+import { sendGAEventWithConsent } from "@/hooks/useTimeOnPage";
 
 export default function OverPage() {
-  const pathname = usePathname();
-  useTimeOnPage(pathname);
   return (
     <div className="p-8 bg-[#f8f5f0] min-h-screen">
       <Header />
@@ -37,7 +34,7 @@ export default function OverPage() {
                 target="_blank"
                 className="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-full text-white font-medium transition"
                 onClick={() =>
-                  sendGAEvent("click_linkedin", {
+                  sendGAEventWithConsent("click_linkedin", {
                     category: "Social",
                     label: "Over Mij Page",
                   })

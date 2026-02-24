@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { sendGAEvent } from "@/hooks/useTimeOnPage"; // импорт функции для GA
+import { sendGAEventWithConsent } from "@/hooks/useTimeOnPage"; 
 
 export default function Header() {
   const pathname = usePathname();
@@ -22,7 +22,7 @@ export default function Header() {
           href="/blog"
           className={linkClass("/blog")}
           onClick={() =>
-            sendGAEvent("click_nav", { category: "Navigation", label: "/blog" })
+            sendGAEventWithConsent("click_nav", { category: "Navigation", label: "/blog" })
           }
         >
           Blog
@@ -32,7 +32,7 @@ export default function Header() {
           href="/"
           className={linkClass("/")}
           onClick={() =>
-            sendGAEvent("click_nav", { category: "Navigation", label: "/" })
+            sendGAEventWithConsent("click_nav", { category: "Navigation", label: "/" })
           }
         >
           Main
@@ -42,7 +42,7 @@ export default function Header() {
           href="/over"
           className={linkClass("/over")}
           onClick={() =>
-            sendGAEvent("click_nav", { category: "Navigation", label: "/over" })
+            sendGAEventWithConsent("click_nav", { category: "Navigation", label: "/over" })
           }
         >
           Over mij

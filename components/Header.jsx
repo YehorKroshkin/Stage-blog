@@ -26,7 +26,7 @@ export default function Header() {
         </Link>
 
         <Link href="/over" className={linkClass("/over")}>
-          Extra
+          Over mij
         </Link>
       </nav>
     </header>

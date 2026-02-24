@@ -1,3 +1,4 @@
+"use client"
 // app/page.jsx
 import Link from "next/link";
 import Header from "../components/Header";

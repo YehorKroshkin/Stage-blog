@@ -72,6 +72,30 @@ export const testPosts: Post[] = [
     text: "Vandaag hadden we een gezellige avond met bordspellen als een soort teambuilding. Het was leuk om collega’s op een andere manier te leren kennen en samen plezier te hebben.",
     photo: "board.png",
     id: 9
+  },
+  {
+    name: "Testing",
+    category: "Code",
+    date: new Date("2026-03-06"),
+    text: "Tijdens deze week was ik bezig met het testen van de functionaliteit van de Profile Page en wachtwoordvalidatie, om te verzekeren dat de interface correct werkt, formulieren juist worden verwerkt en de applicatie bestand is tegen fouten. Dit is belangrijk om bugs te voorkomen, de gebruikerservaring te verbeteren en de betrouwbaarheid van het product te waarborgen. Voor het testen heb ik Jest, React Testing Library, Enzyme en Supertest gebruikt, waarbij zowel frontend als backend werden gecontroleerd. Het werken met tests was nieuw voor mij en stelde me in staat om methoden van unit- en integratietesten te leren.",
+    photo: "test.jpg",
+    id: 10
+  },
+  {
+    name: "Intervisie moment",
+    category: "Event",
+    date: new Date("2026-03-02"),
+    text: "Tijdens het intervisiemoment bij AP was het erg interessant om te horen hoe de stages van anderen verlopen. Ik kon ervaringen en tips van medestudenten vergelijken met mijn eigen stage.",
+    photo: "intervisie.jpg",
+    id: 11
+  },
+  {
+    name: "Moving Forward",
+    category: "Event",
+    date: new Date("2026-03-04"),
+    text: "Vandaag heb ik deelgenomen aan Moving Forward. Ik heb met interessante mensen gesproken, feedback op mijn cv gekregen, en meer gehoord over de mogelijkheden. Uiteindelijk heb ik nu de keuze: proberen een baan te vinden, wat een zeer moeilijke uitdaging is voor een junior graduate, of doorgaan met verder leren.",
+    photo: "moving.jpeg",
+    id: 12
   }
 ];
 

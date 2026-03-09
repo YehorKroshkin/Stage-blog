@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 import Footer from "@/components/Footer";
+import { CookieConsentProvider } from "@/components/CoockieConsentContext";
+import CookieConsentPopup from "@/components/CoockiePopUp";
+import { CookieBlockerOverlay } from "@/components/CoockieBlocker";
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,8 +32,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
-        {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
+        <CookieConsentProvider>
+          {children}
+          <CookieConsentPopup pagePath="/" />
+          {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
+        </CookieConsentProvider>
       </body>
       
     </html>

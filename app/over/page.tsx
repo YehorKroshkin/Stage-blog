@@ -90,6 +90,12 @@ export default function OverPage() {
           <p className="text-stone-700">
             Tijdens mijn stage werk ik aan webontwikkeling en leer ik professionele software toe te passen in een teamcontext. Ik doe ervaring op met moderne technologieën, samenwerking en het oplossen van realistische problemen binnen een bedrijf.
           </p>
+          <p className="text-stone-700 mb-1 mt-1"> Technologieën en tools waarmee ik werk:</p>
+          <ul className="text-stone-700">
+            <li className="ml-4">Frontend: JavaScript, React, GraphQL</li>
+            <li className="ml-4">Backend: JavaScript, Node.js, GraphQL, MongoDB</li>
+            <li className="ml-4">Mobile app: React Native (met JavaScript en GraphQL)</li>
+          </ul>
         </section>
 
       </div>

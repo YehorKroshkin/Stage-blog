@@ -1,4 +1,4 @@
-type Category = "Code" | "Problem Solution" | "Event" | "Lesson" | "Fail" | "Teambuilding";
+type Category = "Ticket" | "Problem Solution" | "Event" | "Lesson" | "Fail" | "Teambuilding";
 
 export interface Post{
     id: number;

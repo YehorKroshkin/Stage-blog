@@ -140,11 +140,20 @@ export const testPosts: Post[] = [
   {
     name: "Bevestigingsstap bij voucher-aankoop",
     category: "Problem Solution",
-    date: new Date("2026-04-24"),
+    date: new Date("2026-04-28"),
     text: "Bij het kopen van een voucher vult de gebruiker zijn gegevens in, waaronder e-mailadres. In sommige gevallen kan het gebeuren dat het ingevoerde e-mailadres niet overeenkomt met het e-mailadres dat aan het profiel van de gebruiker is gekoppeld. Dit kan leiden tot onzekerheid over de correcte levering van de voucher en mogelijk misbruik of fouten in de uitgifte. Om dit probleem op te lossen is er een extra “approve stage” toegevoegd aan het aankoopproces. Wanneer de e-mailadressen niet overeenkomen, wordt de aankoop eerst gecontroleerd en goedgekeurd voordat de voucher wordt verstuurd. Op deze manier wordt de veiligheid verhoogd, worden fouten voorkomen en ontvangt de gebruiker zijn voucher op een gecontroleerde en betrouwbare manier.",
     photo: "approve.png",
     id: 18
+  },
+  {
+    name: "2-de phase integratie met Kadonatie",
+    category: "Ticket",
+    date: new Date("2026-05-05"),
+    text: "Tijdens de tweede fase van de Kadonation-integratie werd het aankoopproces verder geautomatiseerd. Bij een aankoop wordt nu automatisch een nieuwe Kadonation-aankoop aangemaakt binnen het systeem. Daarnaast werd een controle op het e-mailadres toegevoegd, waardoor aankopen automatisch de juiste status krijgen op basis van de ingevoerde gegevens.",
+    photo: "kadonation_1phase.png",
+    id: 19
   }
+
 ];
 
 
